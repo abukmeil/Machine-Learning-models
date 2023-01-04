@@ -20,7 +20,7 @@ class SVM:
         self.x0_1 = np.amin(X[:, 0])
         self.x0_2 = np.amax(X[:, 0])
 
-        fig=plt.figure()
+        fig=plt.figure(figsize=(7,4))
         self.ax=fig.add_subplot()
         font1 = {'family': 'serif', 'weight': 'bold', 'color': 'black', 'size': 14}
         font2 = {'family': 'serif', 'weight': 'bold', 'color': 'black', 'size': 20}
@@ -56,7 +56,7 @@ class SVM:
             plt.xlabel("x1", fontdict=font1)
             plt.ylabel("x2", fontdict=font1)
             plt.title("SVM by: Dr. Mohanad Abukmeil", fontdict=font2)
-            plt.pause(0.000001)
+            plt.pause(0.01)
             plt.cla()
         plt.show()
 
